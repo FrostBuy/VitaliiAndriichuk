@@ -1,19 +1,20 @@
-global side
-side = 100    
-
-global xpos
-xpos = 0 
-
-global ypos
-ypos = 0 
-
-global xdirection
-xdirection = 1
-
-global ydirection
-ydirection = 1
-
 def setup():
+    global side
+    side = 100    
+
+    global xpos
+    xpos = 0 
+    
+    global ypos
+    ypos = 0 
+    
+    global xdirection
+    xdirection = 1
+    
+    global ydirection
+    ydirection = 1
+    # nie jest zalecane, aby zmienne znalazły się po za funkcjami, teraz jest jasno określone, żeby ustawiły się przy odpaleniu programu, przy poprzednim podejściu mogłyby za późno się zainicjalizować gdyby na przykład za dużo rzeczy działoby się w kodzie i pamięć niedałaby rady przemielić ich odpowiednio szybko
+    
     global xpos, ypos
     size(640, 360)
     frameRate(60)
@@ -45,3 +46,5 @@ def draw():
 
 def mousePressed():
     exit()
+    
+# 2pkt
