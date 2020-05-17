@@ -23,7 +23,7 @@ class Triangle(Shape):
         print('Triangle created')
         
     def draw(self):
-        print('Drawing triangle whith sides={self.a}, {self.b}, {self.c}')
+        print('Drawing triangle whith sides={}, {}, {}'.format(self.a, self.b, self.c))
         
     def area(self):
         s = (self.a+self.b+self.c)/2
@@ -32,8 +32,10 @@ class Triangle(Shape):
     def perimeter(self):
         return self.a+self.b+self.c
     
-triangle = Triangle(12,10,12)
+triangle = Triangle(12,10,12) # obiekty miały być dwa
 
 triangle.draw()
 print(triangle.area())
 print(triangle.perimeter())
+
+# 1,75p
