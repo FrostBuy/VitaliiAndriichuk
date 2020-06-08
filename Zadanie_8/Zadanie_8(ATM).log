@@ -1,0 +1,22 @@
+class ATM():
+	availableTransaction = list()
+	
+	def __init__(self, listOfTransaction):
+		self.availableTransaction = listOfTransaction
+	
+	def takeCash(self, BankAccount):
+		if BankAccount in self.availableTransaction:
+			print("Customer have taken a cash.")
+			self.availableTransaction.remove(BankAccount)
+		else:
+			print("Sorry, but you haven't enough money on the Bank Account")
+	
+	def displayAvailableTransaction(self):
+		clear()
+		for number, cash in enumerate(self.availableTransaction):
+			text(cash, 20, 20+number*20)
+	
+	def addCash(self, investMoney)
+		if investMoney:
+			self.availableTransaction.append(investMoney)
+			print("Client have invested the money. Thank You for using our service")
