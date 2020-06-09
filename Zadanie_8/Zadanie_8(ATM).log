@@ -1,22 +1,25 @@
 class ATM():
-	availableTransaction = list()
+	availableTransactions = list() # kolekcje nazywamy zwyczajowo liczbą mnogą ale z nazwy chodzi o transakcje, jak np. wyciągnięcie pieniędzy, a dalej używasz jakby to była lista kont założonych w banku... 
 	
 	def __init__(self, listOfTransaction):
-		self.availableTransaction = listOfTransaction
+		self.availableTransaction = listOfTransactions
 	
-	def takeCash(self, BankAccount):
-		if BankAccount in self.availableTransaction:
+	def takeCash(self, BankAccount): # nazwa wskazuje, że bierze użytkownik, a metoda jest w maszynie, więc powinno być raczej giveCash
+		if BankAccount in self.availableTransactions:
 			print("Customer have taken a cash.")
-			self.availableTransaction.remove(BankAccount)
+			self.availableTransaction.remove(BankAccount) # jeżeli usuniemy, to nie będzie można zrobić ponownej transakcji z podanego konta
 		else:
 			print("Sorry, but you haven't enough money on the Bank Account")
 	
 	def displayAvailableTransaction(self):
 		clear()
-		for number, cash in enumerate(self.availableTransaction):
+		for number, cash in enumerate(self.availableTransactions):
 			text(cash, 20, 20+number*20)
 	
 	def addCash(self, investMoney)
 		if investMoney:
-			self.availableTransaction.append(investMoney)
+			self.availableTransactions.append(investMoney)
 			print("Client have invested the money. Thank You for using our service")
+
+#brakuje klasy karta, czy czegoś takiego - drugiej strony interakcji z bankomatem
+# 0,75/1,5p za tą część
