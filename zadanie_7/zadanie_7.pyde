@@ -29,10 +29,10 @@ class Chomik(Pet):
     def speak(self):
         text('Fr-Fr', random(50, width-70), random(50, height-50))
         return 'Fr-Fr'
-    def gimmePaw(self):
-        image(loadImage("lapa.png"), random(50, width-70), random(50, height-100))
+    #def gimmePaw(self): # chomiki raczej nie podają łapy
+    #    image(loadImage("lapa.png"), random(50, width-70), random(50, height-100))
     def __sub__(self, other): # specjalna metoda nadpisująca operator '+' dla tego typu danych, więcej w referencjach na https://docs.python.org/3/reference/datamodel.html w sekcji 3.3.8.
-        return self.name[0]- ' i ' - other.name[0]
+        return self.name[0]- ' i ' - other.name[0] # ta metoda (odejmowanie) nie zostałą wywołana
     
 def setup():
     size(400,400)
@@ -58,3 +58,4 @@ def mouseClicked():
             pet.gimmePaw()
             
             ##print(self.name)
+#1,5pkt
