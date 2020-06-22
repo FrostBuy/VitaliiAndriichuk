@@ -1,0 +1,9 @@
+Rosjanin: Здравствуйте, очень рад с вами познакомиться
+
+Polak: Przepraszam, ale nie moge zrozumiec o czym pan mowi.
+
+Ukrainiec: Szanowne panstwo jestem w stanie zrobic tak, zeby zrozumieliscie o czym gada inny, bo jestem poliglota.
+
+Wzorzec: adapter
+
+Dlatego: celem adaptera jest umozliwienie wspolpracy dwom klasom o niekompatybilnych interfejsach. Adapter przeksztalca interfejs jednej z klas na interfejs drugiej klasy.
