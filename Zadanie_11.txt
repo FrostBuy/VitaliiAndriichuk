@@ -2,8 +2,11 @@ Rosjanin: Çäğàâñòâóéòå, î÷åíü ğàä ñ âàìè ïîçíàêîìèòüñÿ
 
 Polak: Przepraszam, ale nie moge zrozumiec o czym pan mowi.
 
-Ukrainiec: Szanowne panstwo jestem w stanie zrobic tak, zeby zrozumieliscie o czym gada inny, bo jestem poliglota.
+Ukrainiec: Szanowne panstwo jestem w stanie zrobic tak, zebyœcie zrozumieli o czym gada inny, bo jestem poliglot¹.
 
 Wzorzec: adapter
 
 Dlatego: celem adaptera jest umozliwienie wspolpracy dwom klasom o niekompatybilnych interfejsach. Adapter przeksztalca interfejs jednej z klas na interfejs drugiej klasy.
+
+Tak, t³umacz, to bardzo dobry przyk³¹d adaptera.
+2pkt
