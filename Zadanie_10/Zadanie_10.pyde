@@ -44,6 +44,7 @@ class Testy(unittest.TestCase):
         library.lendBook("Naocznosc")
         self.assertEqual(len(library.availableBooks), 1)
         self.assertTrue("Sens Sztuki" in library.availableBooks)
+        # włąściwie unit testy powinny testować najmniejszą możliwą cząstkę, więc to powinny być dwa testy: tworzenia biblioteki i wypożyczenia z biblioteki
         
     def test_addBook(self):
         library = Library(["Naocznosc", "Sens Sztuki"])
@@ -87,3 +88,5 @@ def mouseClicked(): # poklikajcie kilkakrotnie w przyciski: wypożyczneie dwa ra
 #      self.assertEqual(0, "Naocznosc")
 #if __name__ == '__main__':
 #    unittest.main()
+
+#2pkt
